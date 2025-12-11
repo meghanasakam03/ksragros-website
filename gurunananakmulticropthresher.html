@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KSR- AGRO INDUSTRIES</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/images/ksrlogo.jpeg" rel="icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Story
+  * Template URL: https://bootstrapmade.com/story-bootstrap-blog-template/
+  * Updated: Aug 11 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+
+    nav {
+      width:100%;
+      background:#0a3d62;
+      padding:12px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+    }
+
+    .logo img {
+      height:55px;
+    }
+
+    .menu { display:flex; gap:20px; align-items:center; }
+
+    .menu a {
+      text-decoration:none;
+      color:white;
+      padding:8px 14px;
+      background:#1e579c;
+      border-radius:6px;
+      transition:0.3s;
+    }
+
+    .menu a:hover { background:#4da3ff; }
+
+    /* Dropdown */
+    .dropdown { position:relative; 
+    width: 250px;}
+
+    .dropdown-content {
+      display:none;
+      position:absolute;
+      background:#1e579c;
+      min-width:140px;
+      top:40px;
+      left:0;
+      border-radius:6px;
+      overflow:hidden;
+    }
+
+    .dropdown-content a {
+      display:block;
+      padding:10px;
+      background:#1e579c;
+    }
+
+    .dropdown:hover .dropdown-content { display:block; }
+
+    /* Social icons */
+    .social img { width:26px; }
+
+    .social { display:flex; gap:12px; }
+
+    /* Mobile */
+    .hamburger {
+      display:none;
+      font-size:28px;
+      cursor:pointer;
+    }
+
+    @media(max-width:768px) {
+      .menu {
+        position:absolute;
+        width:100%;
+        background:#0a3d62;
+        top:70px;
+        left:0;
+        flex-direction:column;
+        display:none;
+        padding-bottom:15px;
+      }
+      .menu a { margin:10px; }
+      .social { justify-content:center; margin-top:10px; }
+      .hamburger { display:block; }
+    }
+  * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+
+
+
+*{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0a3d62;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  </style>
+</head>
+<body>
+  
+  <nav>
+     <a href="index.html">
+  <div class="logo">
+    
+    <img src="assets/images/apple-touch-icon.png" alt="KSR Agro Logo">KSR-AGRO
+  </div></a>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="menu" id="menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    
+    <div class="dropdown">
+      <a href="category.html">PRODUCTS ▼</a>
+      <div class="dropdown-content">
+        <a href="malwasidetokri.html">MALWA SIDE TOKRI</a>
+        <a href="malwabacktokri.html">MALWA BACK TOKRI</a>
+        <a href="ksrsidetokri.html">KSR SIDE TOKRI</a> 
+         <a href="ksrgroundnutmutlticropthresher.html">KSR MULTICROP THRESHER</a>
+        <a href="gurunanaksidetokri.html">GURUNANAK SIDE TOKRI</a>
+        <a href="gurunananakmulticropthresher.html">GURUNANAK MULTICROP THRESHER</a>
+         <a href="ksrmaizeE&C.html">KSR MAIZE SHELLER CUM DEHUSKER(E&C)</a>
+        <a href="ksrmaizesheller.html">KSR MAIZE SHELLER CUM DEHUSKER</a>
+        <a href="boslead35s.html">BOSLEAD BOS-35S</a>
+        <a href="boslead3bm.html">BOSLEAD BOS-3BM</a>
+        <a href="ksrgroudnutdestoner.html">KSR GROUNDNUT DESTONER</a>
+        <a href="ksrcastorthresher.html">KSR CASTOR THRESHER</a>
+      </div>
+    </div>
+ <a href="https://share.google/BeacVTsUxgxyvl2vl">VIDEOS</a>
+    <a href="spareparts.html">SPAREPARTS</a>
+    <a href="contact.html">CONTACT</a>
+
+    <div class="social">
+      <a href="https://www.instagram.com/agricultureisfuture221?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+      <a href="https://share.google/BeacVTsUxgxyvl2vl"><img src="https://cdn-icons-png.flaticon.com/512/174/174883.png"></a>
+      <a href="mailto:ksragriimplements@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"></a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu(){
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+</body>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="assets/images/ksrlogo.jpeg" alt="">
+        <h1 class="sitename">KSR-AGRO</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+         <li><a href="about.html">About</a></li>
+          <li><a href="https://share.google/BeacVTsUxgxyvl2vl">Videos</a></li>
+          <li class="dropdown"><a href="category.html"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li>  <a href="malwasidetokri.html">MALWA SIDE TOKRI</a>  </li>
+              <li>  <a href="malwabacktokri.html">MALWA BACK TOKRI</a>  </li>
+              <li>  <a href="ksrsidetokri.html">KSR SIDE TOKRI</a>   </li>
+              <li><a href="ksrgroundnutmutlticropthresher.html">KSR MULTICROP THRESHER</a>
+              </li>
+              <li> <a href="gurunanaksidetokri.html">GURUNANAK SIDE TOKRI</a></li>
+              <li><a href="gurunananakmulticropthresher.html">GURUNANAK MULTICROP THRESHER</a></li>
+             <li><a href="ksrgroudnutdestoner.html">KSR GROUNDNUT DESTONER</a></li>
+              <li><a href="ksrcastorthresher.html">KSR CASTOR THRESHER</a></li>
+              <li><a href="ksrmaizeE&C.html">KSR MAIZE SHELLER CUM DEHUSKER(E&C)</a></li>
+              <li><a href="ksrmaizesheller.html">KSR MAIZE SHELLER CUM DEHUSKER</a> </li>
+              <li><a href="boslead35s.html">BOSLEAD BOS-35S</a></li>
+              <li><a href="boslead3bm.html">BOSLEAD BOS-3BM</a></li>
+            
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.instagram.com/agricultureisfuture221?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://share.google/BeacVTsUxgxyvl2vl" class="youtube"><i class="bi-youtube"></i></a>
+              <a href="mailto:ksragriimplements@gmail.com" ><i class="fa fa-google"></i></a>.
+            
+      </div>
+
+    </div>
+  </header>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/images/GNAmulticropthresher.png);">
+      <div class="container position-relative">
+        <h1>GURUNANAK MULTICROP THRESHER</h1>
+     
+       
+      </div>
+    </div><!-- End Page Title -->
+    
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <a href="malwabacktokri.html">
+  <img src="assets/images/Malwabacktokri.png" style="width:100%"></a>
+  <div class="text">MALWA BACK TOKRI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <a href="malwasidetokri.html">
+  <img src="assets/images/Malwasidetokri.jpg" style="width:100%"></a>
+  <div class="text">MALWA SIDE TOKRI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <a href="ksrsidetokri.html">
+  <img src="assets/images/ksr sidetokri.jpeg" style="width:100%"></a>
+  <div class="text">KSR SIDETOKRI</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <a href="gurunananakmulticropthresher.html">
+  <img src="assets/images/ksr groundnut multicrop thresher.jpg" style="width:100%"></a>
+  <div class="text">KSR GROUNDNUT MULTICROP THRESHER</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <a href="gurunananakmulticropthresher.html">
+  <img src="assets/images/Gurunanakmulticropthresher.jpg" style="width:100%"></a>
+  <div class="text">GURUNANAK MULTICROP THRESHER</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <a href="ksrmaizeE&C.html">
+  <img src="assets/images/ maize -sheller.png" style="width:100%"></a>
+  <div class="text">KSR MAIZE SHELLER</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <a href="ksrcastorthresher.html">
+  <img src="assets/images/ksr UNNATI CASTROL THRESHER 1.webp" style="width:100%"></a>
+  <div class="text">KSR CASTROL THRESHER</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <a href="boslead35s.html">
+  <img src="assets/images/KSR BOS-35S.jpg" style="width:100%"></a>
+  <div class="text">KSR BOS -35S</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <a href="boslead3bm.html">
+  <img src="assets/images/KSR BOS-3BM.jpg" style="width:100%"></a>
+  <div class="text">KSR BOS-3MB</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <a href="ksrgroudnutdestoner.html"><img src="assets/images/ groundnutdestoner.jpg" style="width:100%"></a>
+  <div class="text">KSR GROUNDNUT DESTONER</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+ 
+</div>
+ 
+   <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+ <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 position-relative">
+            <div class="about-img" data-aos="fade-right">
+              <img src="assets/images/GNAmulticropthresher.png" class="img-fluid" alt="">
+            </div>
+            <div class="experience-badge" data-aos="fade-up">
+              <h2>15+</h2>
+              <p>Years of<br>Experience</p>
+            </div>
+          
+          </div>
+        
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="display-4 fw-bold mb-4">GURUNANAK MULTICROP THRESHER</h2>
+            <p class="lead mb-4"></p>
+            <div class="features">
+              <div class="feature-item mb-4" data-aos="fade-up">
+                <div class="feature-icon">
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Product Code: KSR-GNA-HCML-THR</h4>
+              <P>
+Gurunanak agriculture High Capacity Multi crop Thresher is capable of threshing wide variety of crops ranging from Groundnuts (Wet Crop and Dry crop), rice, Wheat, Maize, Millets, Green gram, Black gram, Soya bean, Mustard,, Red grams, ragi.
+
+Easy to feed due to side tokiri which reduces the labour cost
+
+PTO Driven with 540Rpm 35hp and above tractor.
+
+output capacity of the thresher is above 4-ton/hr
+
+High built quality and durability with Branded running parts like bearings, belts,
+
+pulleys
+
+Best output capacity with clear grains compering with other Threshers</P> </div>
+              </div>
+
+           
+
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+     <section id="category-section" class="category-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Video</span>
+        <h2>video</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Main Featured Post -->
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-8">
+            <article class="hero-post" data-aos="zoom-out" data-aos-delay="200">
+              <div class="post-img">
+ <div class="hero-video-container">
+        <video autoplay="" muted="" loop="">
+          <source src="assets/images/vedio.mp4" type="video/mp4">
+          
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+              </div>
+              
+            </article>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="sidebar-posts">
+              <article class="sidebar-post" data-aos="fade-left" data-aos-delay="300">
+                <div class="post-img">
+                  <img src="assets/images/mission.png" alt="" class="img-fluid" loading="lazy">
+                </div>
+                <div class="post-content">
+                  <span class="post-category">Mission Statement:</span>
+                  <h4 class="title">
+                    <a href="blog-details.html">We are committed to serving Indian agricultural growth with value and aim to gain the trust of indian farmers.
+.</a>
+                  </h4>
+                  
+                </div>
+              </article>
+
+              <article class="sidebar-post" data-aos="fade-left" data-aos-delay="400">
+                <div class="post-img">
+                  <img src="assets/images/vision.png" alt="" class="img-fluid" loading="lazy">
+                </div>
+                <div class="post-content">
+                  <span class="post-category">Vision Statement:</span>
+                  <h4 class="title">
+                    <a href="blog-details.html">To be recognized as the foremost innovator and go-to partner for agricultural improvements in India, enabling farmers to achieve higher efficiency and sustainability.</a>
+                  </h4>
+                
+                </div>
+              </article>
+
+              <article class="sidebar-post" data-aos="fade-left" data-aos-delay="500">
+                <div class="post-img">
+                  <img src="assets/images/values.png" alt="" class="img-fluid" loading="lazy">
+                </div>
+                <div class="post-content">
+                  <span class="post-category">Company Values/Core Principles:</span>
+                  <h4 class="title">
+                    <a href="blog-details.html">Cost efficiency, value-added service, and a talented team of engineers dedicated to innovation and excellence.
+</a>
+                  </h4>
+                 
+                </div>
+              </article>
+
+              <article class="sidebar-post" data-aos="fade-left" data-aos-delay="600">
+                <div class="post-img">
+                  <img src="assets/images/milestone.jpg" alt="" class="img-fluid" loading="lazy">
+                </div>
+                <div class="post-content">
+                  <span class="post-category">Key Achievements/Milestones:</span>
+                  <h4 class="title">
+                    <a href="#">Achieved highest sales for Multi Crop Thresher in Andhra Pradesh.
+
+Recognized as one of the top 5 companies supplying implements under the Andhra Pradesh Government DBT (SMAM, PMKSY) Subsidy Scheme during 2018-19.
+
+Consistent supplier for state-driven agricultural machinery programs.</a>
+                  </h4>
+                
+                </div>
+              </article>
+
+               
+            </div>
+          </div>
+        </div>
+
+     
+      </div>
+
+
+    </section><!-- /Category Section Section -->
+     </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="index.html" class="logo d-flex align-items-center mb-3">
+              <span class="sitename">KSR AGRO INDUSTRIES</span>
+            </a>
+            <!--<p class="tagline">Innovating the digital landscape with elegant solutions and timeless design.</p>-->
+
+            <div class="social-links mt-4">
+              <!--<a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>-->
+              <a href="https://www.instagram.com/agricultureisfuture221?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://share.google/BeacVTsUxgxyvl2vl" class="youtube"><i class="bi-youtube"></i></a>
+              <a href="mailto:ksragriimplements@gmail.com" ><i class="fa fa-google"></i></a>.
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="footer-links-grid">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="https://share.google/BeacVTsUxgxyvl2vl">Vedios</a></li>
+                  <li><a href="category.html">Products</a></li>
+                 <!---- <li><a href="#">Newsroom</a></li>-->
+                </ul>
+              </div>
+               <div class="col-6 col-md-4">
+                <h5>ADDRESS</h5>
+                <ul class="list-unstyled">
+    
+                  <li><a href="#">Add: Plot No: C-3,Industrial Estate,</a></li>
+                  <li><a href="#">Near D-Mart,Opp:YAMAHA BikShowroom,</a></li>
+                  <li><a href="#">Mydukur Road,Proddatur-516360</a></li>
+                  <li><a href="#">Kadapa Dt. A.P</a></li>
+                </ul>
+              </div>
+               <div class="col-6 col-md-4">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#">790 16 16 100</a></li>
+                  <li><a href="#">790 16 16 099</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-cta">
+            <h5>Let's Connect</h5>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom-content">
+              <p class="mb-0">© <strong>Ksr-agro</strong>. industries</p>
+              <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Designed by <a href="https://www.ksragroindustries.com/">susmitha Kuppannagari</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="whatsapp-chatbtn"><a href="https://wa.me/send?phone=917901616099&text=“Hi 👋! How can we help you today?”" target="_blank"><img src="assets/images/whatsappimg.jpg" alt=""/>
+</a>
+<a href="tel:+91 7901616099" target="_blank"><img src="assets/images/phonecall.png" alt=""/></a></div>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
+    <style>
+      .whatsapp-chatbtn{
+	    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 50px;
+	z-index: 9999;
+transition-timing-function: ease-in-out;
+}
+.whatsapp-chatbtn img{width: 100%; margin-bottom: 1px}
+.whatsapp-chatbtn img:hover{opacity: 0.4; transition: opacity 1s}
+    </style>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
